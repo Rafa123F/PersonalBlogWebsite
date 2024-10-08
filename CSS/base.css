@@ -1,0 +1,122 @@
+.cursive {
+    font-family: cursive;
+}
+
+.title1 {
+    text-align: left;
+    border-radius: 10px;
+    font-size: 40px;
+    color: lavender;
+    padding: 20px;
+    background-color: darkslategray;
+}
+
+samp {
+    font-family: fantasy;
+    /* border: solid white; */
+    display: flex;
+    border-radius: 10px;
+    padding: 30px;
+    border-bottom-style: solid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+samp>ul {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+samp > ul > li{
+    display: none;
+}
+
+#Home,
+#AboutUs,
+#Cont,
+#categ {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: lightgray;
+    text-decoration: unset;
+    color: black;
+}
+
+h3 {
+    margin-block-end: 10px;
+    margin-block-start: 0px;
+}
+
+.bl_titl {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    /* height: 30px; */
+    padding-left: 10px;
+}
+
+.read {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cont1 {
+    position: relative;
+
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    transition: .5s ease;
+    opacity: 0;
+    color: rgb(115, 239, 198);
+    padding: 5px;
+    border-radius: 10px;
+    bottom: 10px;
+}
+
+.cont1:hover .overlay {
+    opacity: 1;
+}
+
+#fbl {
+    background-image: url('../img/cake.jpg');
+    background-size: cover;
+}
+
+#sbl {
+    background-image: url('../img/cat.jpg');
+    background-size: cover;
+}
+
+#tbl {
+    background-image: url('../img/salala.jpg');
+    background-size: cover;
+}
+
+#fobl {
+    background-image: url('../img/draw.jpg');
+    background-size: cover;
+}
+
+.ft {
+    display: flex;
+    flex-direction: row;
+    background-color: darkslategray;
+    border: solid;
+    color: white;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+
+.flinks {
+    display: flex;
+    flex-direction: row;
+}

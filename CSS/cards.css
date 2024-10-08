@@ -1,0 +1,8 @@
+.blogs {
+    border: outset;
+    border-radius: 15px;
+    width: 350px;
+    height: 250px;
+    margin: 10px;
+    padding: 20px;
+}

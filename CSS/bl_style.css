@@ -1,0 +1,410 @@
+@import url("../CSS/base.css");
+@import url("../CSS/menu_base.css");
+@import url("../CSS/icons.css");
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    grid-template-areas:
+        "hdr"
+        "main"
+        "ftr";
+    width: 100%;
+    height: 100vh;
+}
+
+.head {
+    grid-area: hdr;
+}
+
+.main {
+    grid-area: main;
+}
+
+.fot {
+    grid-area: ftr;
+}
+
+ol {
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    right: 20px;
+}
+
+ol>li {
+    color: gray;
+}
+
+ol>li>b {
+    color: black;
+
+}
+
+ol>li>p {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+#tt1 {
+    padding: 10px;
+
+}
+
+.avt_bord {
+    background-color: #ededed;
+    padding: 5px;
+    border-radius: 15px;
+    position: relative;
+    right: 170px;
+}
+
+.avt {
+    width: 20%;
+    margin: 5px;
+}
+
+#img1 {
+    order: 2;
+    padding: 10px;
+    width: 100%;
+}
+
+.cakeS {
+    align-self: center;
+    width: 80%;
+}
+
+.cakem {
+    margin-left: 100px;
+}
+
+.fcaption {
+    margin-left: 250px;
+    order: 2;
+    font-style: italic;
+}
+
+.line_style {
+    font-style: italic;
+}
+
+#salala {
+    align-self: center;
+    width: 60%;
+}
+
+.salalaFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.fig {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    font-style: italic;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+.blquote {
+    text-align: justify;
+    font-size: 19px;
+    width: 50%;
+}
+
+.underl {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+#par {
+    width: 50%;
+    order: 3;
+    padding: 5px;
+    text-align: justify;
+    font-size: 19px;
+    position: relative;
+    bottom: 30px;
+}
+
+q {
+    font-style: italic;
+}
+
+button {
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    order: 3;
+    margin: 10px;
+    background-color: slategray;
+    font-weight: bold;
+}
+
+button>a {
+    text-decoration: none;
+    color: lavender;
+}
+
+.width_ft {
+    padding: 20px;
+}
+
+.imgflw {
+    padding: 10px;
+    align-items: center;
+}
+
+.copyr {
+    color: azure;
+    padding: 10px;
+    width: 350px;
+}
+
+.box {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    align-items: start;
+}
+
+#one {
+    order: 1;
+    padding: 20px;
+    margin: 20px;
+}
+
+#two {
+    order: 2;
+    padding: 20px;
+    margin: 20px;
+}
+
+#three {
+    order: 3;
+    padding: 20px;
+    margin: 20px;
+}
+
+@media (min-width: 769px) and (max-width:900px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-template-areas:
+            "hdr"
+            "main"
+            "ftr";
+        width: 100%;
+        height: 100vh;
+    }
+
+    .menus {
+        border: none;
+        width: 100%;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .avt {
+        margin: 10px;
+        width: 50px;
+    }
+
+    #salala {
+        align-self: center;
+        width: 100%;
+    }
+
+    .fcaption {
+        order: 2;
+        margin-left: 0px;
+    }
+
+    .blquote {
+        text-align: justify;
+        font-size: 19px;
+        width: 70%;
+    }
+
+    #par {
+        order: 3;
+        padding: 5px;
+        width: 70%;
+    }
+
+    .width_ft {
+        padding: 10px;
+        width: 120px;
+    }
+
+    .box {
+        display: flex;
+        width: 130px;
+        height: 250px;
+        border: 1px solid #808080;
+        border-radius: 10px;
+    }
+
+    #one {
+        order: 1;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #two {
+        order: 2;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #three {
+        order: 3;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .imgflw {
+        width: 100px;
+    }
+
+    .copyr {
+        color: azure;
+        width: 100px;
+        font-size: medium;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-template-areas:
+            "hdr"
+            "main"
+            "ftr";
+        width: 100%;
+        height: 100vh;
+    }
+
+    samp>ul>li {
+        display: contents;
+    }
+
+    samp>ul>li>a {
+        color: white;
+    }
+
+    .menus {
+        display: none;
+    }
+
+    .avt_bord {
+        background-color: #ededed;
+        padding: 5px;
+        border-radius: 15px;
+        position: static;
+    }
+
+    .avt {
+        margin: 10px;
+        width: 25%;
+    }
+
+    #salala {
+        align-self: center;
+        width: 100%;
+    }
+
+    .fcaption {
+        order: 2;
+        margin-left: 0px;
+    }
+
+    .blquote {
+        text-align: justify;
+        font-size: 19px;
+        width: 70%;
+    }
+
+    #par {
+        order: 3;
+        padding: 5px;
+        width: 70%;
+    }
+
+    .width_ft {
+        width: auto;
+        padding: 0px;
+    }
+
+    .imgflw {
+        padding: 10px;
+        width: 70px;
+    }
+
+    .copyr {
+        color: azure;
+        padding: 10px;
+        width: 90px;
+        font-size: 14px;
+    }
+
+    .box {
+        display: flex;
+        width: 100px;
+        height: 200px;
+        border: 1px solid #808080;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+
+    #one {
+        order: 1;
+        padding: 5px;
+        margin: 5px;
+
+    }
+
+    #two {
+        order: 2;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #three {
+        order: 3;
+        padding: 5px;
+        margin: 5px;
+    }
+}

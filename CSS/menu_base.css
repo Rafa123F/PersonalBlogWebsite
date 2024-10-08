@@ -1,0 +1,22 @@
+
+.menus {
+    display: flex;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 16px;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    list-style: none;
+}
+
+ul>li {
+    padding: 5px;
+}
