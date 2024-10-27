@@ -27,14 +27,15 @@ samp>ul {
     margin-block-start: 0px;
 }
 
-samp > ul > li{
+samp>ul>li {
     display: none;
 }
 
 #Home,
 #AboutUs,
 #Cont,
-#categ {
+#galary,
+#subscribe {
     padding: 10px;
     border-radius: 10px;
     text-align: center;
