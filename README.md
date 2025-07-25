@@ -2,6 +2,8 @@
 
 A simple, responsive personal blog website built with HTML and CSS. The site features multiple blog pages, a navigation menu, and a visually appealing layout suitable for sharing personal interests and experiences.
 
+![Screenshot of Personal Blog Website](img/Screenshot.png)
+
 ## Features
 
 - **Responsive Design:** Adapts to different screen sizes using CSS Grid and Flexbox.
